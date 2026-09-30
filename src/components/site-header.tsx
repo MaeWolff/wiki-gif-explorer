@@ -1,3 +1,4 @@
+import { Toolbox } from '@/components/toolbox'
 import { GITHUB_REPO_URL } from '@/lib/utils/config'
 
 type SiteHeaderProps = {
@@ -25,15 +26,18 @@ export function SiteHeader({ query, onQueryChange }: SiteHeaderProps) {
         <p className="font-display text-lg font-semibold tracking-tight text-ink">
           Wiki GIF Explorer
         </p>
-        <a
-          href={GITHUB_REPO_URL}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Voir le projet sur GitHub"
-          className="rounded-full p-2 text-ink-muted transition-colors duration-150 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          <GitHubIcon className="size-5" />
-        </a>
+        <div className="flex items-center gap-2">
+          <Toolbox />
+          <a
+            href={GITHUB_REPO_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Voir le projet sur GitHub"
+            className="rounded-full p-2 text-ink-muted transition-colors duration-150 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            <GitHubIcon className="size-5" />
+          </a>
+        </div>
       </div>
 
       <div className="max-w-2xl">
