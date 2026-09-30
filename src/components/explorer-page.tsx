@@ -56,7 +56,8 @@ export function ExplorerPage() {
         if (!hasNextPage || isFetchingNextPage) return
         void fetchNextPage()
       },
-      { rootMargin: '400px 0px' },
+      // Plus large : on précharge avant d’arriver en bas, avec des pages plus grosses.
+      { rootMargin: '800px 0px' },
     )
 
     observer.observe(node)

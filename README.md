@@ -1,6 +1,6 @@
 # Wiki GIF Explorer
 
-Explore les articles [Wikipédia en français](https://fr.wikipedia.org) dont l’image principale (Wikidata P18) est un GIF.
+Explore les articles [Wikipédia en français](https://fr.wikipedia.org) dont l’image principale (`pageimage`) est un GIF animé.
 
 ## Démarrer
 
